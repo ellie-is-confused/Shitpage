@@ -19,7 +19,7 @@ server.on('connection', function(socket) {
 app.use(express.static('public'));
 
 app.get('/', async function(req, res){
-    res.render(__dirname + '/veiws/index.ejs')
-})
+    res.render(__dirname + '/veiws/index.ejs');
+});
 
-app.listen(80)
+app.listen(80);
